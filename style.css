@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+body {
+  margin: 0;
+  background-color: white;
+}
+
+#logo {
+  height: 40px;
+}
+
+button {
+  /*hintergrundfarbe weiss oder transparent und kein Rahmen mehr*/
+  background-color: #fff;
+  border: none;
+}
+
+/* Bei der Liste keine Bulletpoints mehr anzeigen
+   selector {
+    property: value
+}
+*/
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+Die Links in der Liste sollen sein:
+
+*/
+
+.navigation,
+a {
+  color: black;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px;
+}
+
+a:hover {
+  background-color: aquamarine;
+  padding: 10px;
+  border-radius: 30px;
+}
+
+header {
+  height: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.4);
+}
+.show {
+  display: block;
+}
+nav {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  /**/
+
+  nav {
+    display: block;
+  }
+
+  button {
+    display: none;
+  }
+
+  ul {
+    display: flex;
+    gap: 10px;
+  }
+}
